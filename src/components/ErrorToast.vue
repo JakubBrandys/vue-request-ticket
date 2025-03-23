@@ -1,6 +1,6 @@
 <template>
   <div v-if="errorMessage" class="error-toast">
-    {{ errorMessage }}
+    <span>{{ errorMessage }}</span>
     <button @click="clearError">x</button>
   </div>
 </template>
@@ -25,5 +25,14 @@ const { errorMessage, clearError } = useError();
   justify-content: space-between;
   align-items: center;
   min-width: 240px;
+  z-index: 1000;
+}
+
+.error-toast button {
+  background: none;
+  border: none;
+  color: #a00;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 </style>
