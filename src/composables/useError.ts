@@ -3,17 +3,17 @@ import { ref } from 'vue';
 const errorMessage = ref<string | null>(null);
 
 export function useError() {
-    const setError = (msg: string) => {
-        errorMessage.value = msg;
-    };
+  const setError = (msg: string) => {
+    errorMessage.value = msg;
+  };
 
-    const clearError = () => {
-        errorMessage.value = null;
-    };
+  const clearError = () => {
+    errorMessage.value = null;
+  };
 
-    return {
-        errorMessage,
-        setError,
-        clearError
-    };
+  return {
+    errorMessage,
+    setError,
+    clearError,
+  };
 }
