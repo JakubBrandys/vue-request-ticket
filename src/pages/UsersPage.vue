@@ -10,9 +10,7 @@
     </div>
 
     <ul v-else-if="users.length > 0">
-      <li v-for="user in users" :key="user.id">
-        {{ user.name }} – {{ user.email }}
-      </li>
+      <li v-for="user in users" :key="user.id">{{ user.name }} – {{ user.email }}</li>
     </ul>
 
     <div v-else>No users found.</div>
