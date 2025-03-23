@@ -1,8 +1,8 @@
 import { ref } from 'vue';
 import { fetchUsers } from '@/services/api';
 import type { User } from '@/types/user';
-import { useError } from './useError';
 import type { UseUsers } from '@/types/composables.ts';
+import { useError } from './useError';
 
 export function useUsers(): UseUsers {
   const users = ref<User[]>([]);

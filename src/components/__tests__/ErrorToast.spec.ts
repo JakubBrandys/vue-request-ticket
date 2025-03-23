@@ -4,7 +4,6 @@ import { mount } from '@vue/test-utils';
 import ErrorToast from '@/components/ErrorToast.vue';
 import { useError } from '@/composables/useError.ts';
 
-
 vi.mock('@/composables/useError', () => ({
   useError: vi.fn(),
 }));
