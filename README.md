@@ -11,7 +11,7 @@ A simple Vue 3 + TypeScript project showcasing good practices, API integration, 
 - **TypeScript** – type safety across the app
 - **Vue Router** – SPA routing
 - **ESLint + Prettier** – code style and formatting
-
+- **Vitest** – fast and lightweight unit testing.
 ---
 
 ---
@@ -30,6 +30,9 @@ npm run build
 
 # Preview production build
 npm run preview
+
+# Run tests
+npm run test
 ```
 
 ---
